@@ -1,0 +1,310 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../font/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+ @font-face {
+    font-family: 'OldSport';
+    src: url(../font/oldsport/OldSport02AthleticNcv-E0gj.ttf);
+ }
+
+ @font-face {
+    font-family: 'SportOutline';
+    src: url(../font/Sportingoutlinefont/SportingOutline-x3e85.ttf);
+ }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body{
+    background: linear-gradient(to right, #0c0c0c 0%, #0c0c0c 50%, white 50%, white 100%);
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 1s;
+}
+header{
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+
+nav .logo img{
+    width: 100px;
+    height: 100px;
+
+}
+
+nav .nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideleft 1s forwards ease-in-out;
+    transition: ease-in-out;
+}
+
+nav .nav-list{
+    list-style-type: none;
+    margin: 40px;
+}
+
+nav .nav-list a{
+    font-family: 'Montserrat';
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.8s;
+    outline: none;
+    cursor: pointer;
+}
+nav .nav-list a:hover{
+    color: #888;
+}
+
+nav .nav-list a:focus{
+    color: #888;
+}
+
+.hamburger{
+    display: none;
+}
+
+main{
+    position: relative;
+    width: 100%;
+    padding: 0 40px;
+    flex-grow: 1;
+    height: 70vh;
+}
+
+.firstarea{
+    position: absolute;
+    width: 300px;
+    top: 200px;
+}
+
+.firstarea .name{
+    font-family: 'Montserrat';
+    font-size: 70px;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+.max{
+    font-weight: normal;
+    color: #333;
+    font-family: 'OldSport';
+    -webkit-text-stroke: 1px #fff;
+}
+
+.firstarea p{
+    font-weight: lighter;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+}
+
+.secondarea{
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: 300px;
+    font-family: 'Montserrat';
+}
+
+
+.inner{
+    position: absolute;
+    right: 70px;
+    width: 100%;
+}
+.secondarea .year{
+    color: #000;
+    font-size: 50px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+
+}
+.year-text{
+    font-weight: 500;
+}
+.year .subtract{
+    color: #000;
+    font-weight: 600;
+}
+
+.secondarea p{
+    color: #000;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.inner-div{
+    position: absolute;
+    top: 300px;
+    right: 100px;
+}
+
+.idiv{
+    position: relative;
+    width: 350px;
+    border: 3px solid #000;
+    padding: 24px;
+    height: 100px;
+    font-family: 'Montserrat';
+    border-radius: 10px;
+}
+
+.idiv p{
+    font-size: 14px;
+    word-wrap: break-word;
+    text-wrap: wrap;
+}
+
+.idiv .number{
+    margin-right: 10px;
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 35px;
+    font-weight: 800;
+
+}
+
+.idiv .top{
+    position: absolute;
+    top: 10px;
+    width: 200px;
+}
+
+.idiv .down{
+    position: absolute;
+    bottom: 0;
+    text-align: right;
+    width: 250px;
+    right: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.idiv img{
+    width:50px;
+    height:50px;
+    filter: invert(100%);
+    position: absolute;
+    bottom: 0;
+}
+.shoe{
+    position: absolute;
+    top: 25%;
+    right: 25%;
+    transform: translate(-25%,-25%);
+}
+
+.shoe img{
+    position: relative;
+    display: block;
+    width: 500px;
+    height: 500px;
+    animation: slidedown 2s normal ease-in-out;
+    transform: rotate(-25deg);
+}
+
+.n1,.n2,.n3,.n4,.n5{
+    position: absolute;
+    background: linear-gradient(to bottom, #555, #000);
+    border-radius: 50%;
+    animation: slideright 1.5s forwards ease-in-out;
+    
+}
+
+.n1{
+    height: 250px;
+    width: 250px;
+    top: 350px;
+    right: 1000px;
+}
+
+.n2{
+    height: 50px;
+    width: 50px;
+    top:300px;
+    right: 990px;
+}
+
+.n3{
+    height: 50px;
+    width: 50px;
+    top: 250px;
+    right: 500px;
+    z-index: -3;
+}
+
+.n4{
+    height: 250px;
+    width: 250px;
+    top: 0;
+    right: 430px;
+    z-index: -3;
+}
+
+.n5{
+    height: 70px;
+    width: 70px;
+    top: 0;
+    right: 380px;
+}
+
+
+@keyframes slidedown {
+    0%{
+        transform: translateY(-1000%) rotate(-25deg);
+    }
+    100%{
+        transform: translateY(0) rotate(-25deg);
+    }
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-25deg);
+    }
+    
+}
+
+
+@keyframes slideright {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideleft {
+    from{
+        transform: translateX(10%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
